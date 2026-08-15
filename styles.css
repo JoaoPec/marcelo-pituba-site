@@ -37,7 +37,7 @@ section[id]{scroll-margin-top:94px}
 .brand-mark img,.final-ornament img{width:100%;height:100%;object-fit:contain;object-position:center}
 
 /* Nova marca fornecida pelo cliente: o arquivo permanece íntegro; só o espaço vazio é enquadrado na interface. */
-.client-logo{overflow:hidden;padding:0;background:#f4eee8}
+.client-logo{overflow:hidden;padding:0;background:transparent}
 .client-logo img{transform:scale(1.45);transform-origin:center}
 .couples{background:#e9ddd3}
 .couples-content{max-width:780px}
