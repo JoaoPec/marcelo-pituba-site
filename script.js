@@ -1,3 +1,5 @@
+document.documentElement.classList.add('js-motion');
+
 const menuButton = document.querySelector('.menu-toggle');
 const mobileNav = document.querySelector('.mobile-nav');
 menuButton?.addEventListener('click', () => {
