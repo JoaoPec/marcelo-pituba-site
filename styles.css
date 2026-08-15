@@ -24,3 +24,10 @@
 @media (max-width:800px){
   .hero-whatsapp{min-height:56px;margin-top:4px}
 }
+
+/* Cabeçalho persistente: mantém a mesma posição visual inicial e protege âncoras. */
+body{padding-top:76px}
+.site-header{position:fixed;inset:0 0 auto;width:100%;box-shadow:0 3px 14px rgba(82,42,42,.05)}
+section[id]{scroll-margin-top:94px}
+@media (min-width:1101px){body{padding-top:82px}}
+@media (max-width:800px){body{padding-top:68px}section[id]{scroll-margin-top:82px}}
