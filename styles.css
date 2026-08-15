@@ -45,3 +45,5 @@ section[id]{scroll-margin-top:94px}
 .couples-body{max-width:700px;margin-top:34px;color:#5f4d4b;font-size:17px}
 .couples-body p{margin:0 0 20px}
 @media (max-width:800px){.couples h2{font-size:clamp(32px,9vw,46px)}.couples-body{font-size:16px;margin-top:27px}}
+
+.hero-credential{display:flex;align-items:center;gap:9px;margin:-9px 0 24px;color:#6d504c;font-size:11px;font-weight:600;letter-spacing:.1em;line-height:1.35;text-transform:uppercase}.hero-credential::before{content:"";width:20px;height:1px;background:var(--gold);flex:none}@media (max-width:800px){.hero-credential{margin:-7px 0 22px;font-size:10px;letter-spacing:.085em}.hero-credential::before{width:16px}}
