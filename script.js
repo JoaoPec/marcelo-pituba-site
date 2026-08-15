@@ -10,7 +10,16 @@ document.querySelectorAll('.mobile-nav a').forEach((link) => link.addEventListen
   menuButton?.setAttribute('aria-expanded', 'false');
   mobileNav.setAttribute('aria-hidden', 'true');
 }));
-const observer = new IntersectionObserver((entries) => entries.forEach((entry) => {
+const sectionObserver = new IntersectionObserver((entries) => entries.forEach((entry) => {
   if (entry.isIntersecting) entry.target.classList.add('visible');
 }), { threshold: 0.08 });
-document.querySelectorAll('section').forEach((section) => observer.observe(section));
+document.querySelectorAll('section').forEach((section) => sectionObserver.observe(section));
+
+const hero = document.querySelector('.hero');
+const floatingWhatsApp = document.querySelector('.whatsapp-float');
+if (hero && floatingWhatsApp) {
+  const heroObserver = new IntersectionObserver(([entry]) => {
+    floatingWhatsApp.classList.toggle('is-visible', !entry.isIntersecting);
+  }, { threshold: 0 });
+  heroObserver.observe(hero);
+}
