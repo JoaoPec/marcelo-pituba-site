@@ -13,6 +13,8 @@
   .hero h1{font-size:clamp(54px,5.8vw,86px);line-height:1.03;margin-bottom:30px}
   .hero-lede{max-width:420px;font-size:17px;line-height:1.72;margin-bottom:29px}
   .hero-whatsapp{min-width:270px;min-height:60px;padding:14px 18px 14px 22px;margin-top:2px}
+  .hero-whatsapp span{font-size:14px;letter-spacing:.15em}
+  .hero-whatsapp img{width:28px;height:28px}
 }
 @media (max-width:1100px) and (min-width:801px){
   .hero-copy{margin-left:clamp(115px,16vw,185px);max-width:500px}
