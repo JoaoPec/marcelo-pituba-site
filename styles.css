@@ -39,11 +39,6 @@ section[id]{scroll-margin-top:94px}
 /* Nova marca fornecida pelo cliente: o arquivo permanece íntegro; só o espaço vazio é enquadrado na interface. */
 .client-logo{overflow:hidden;padding:0;background:transparent}
 .client-logo img{transform:scale(1.45);transform-origin:center}
-.couples{background:#e9ddd3}
-.couples-content{max-width:780px}
-.couples h2{font:400 clamp(34px,4.4vw,62px)/1.16 var(--serif);letter-spacing:-.045em;color:var(--wine-dark);margin:0;max-width:760px}
-.couples-body{max-width:700px;margin-top:34px;color:#5f4d4b;font-size:17px}
-.couples-body p{margin:0 0 20px}
-@media (max-width:800px){.couples h2{font-size:clamp(32px,9vw,46px)}.couples-body{font-size:16px;margin-top:27px}}
+.couples{background:#e9ddd3}.couples h2{font:400 clamp(30px,4vw,55px)/1.18 var(--serif);letter-spacing:-.04em;color:var(--wine-dark);margin:0}
 
 .hero-credential{display:flex;align-items:center;gap:9px;margin:-9px 0 24px;color:#6d504c;font-size:11px;font-weight:600;letter-spacing:.1em;line-height:1.35;text-transform:uppercase}.hero-credential::before{content:"";width:20px;height:1px;background:var(--gold);flex:none}@media (max-width:800px){.hero-credential{margin:-7px 0 22px;font-size:10px;letter-spacing:.085em}.hero-credential::before{width:16px}}
