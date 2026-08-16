@@ -43,6 +43,12 @@ section[id]{scroll-margin-top:94px}
 
 .hero-credential{display:flex;align-items:center;gap:9px;margin:-9px 0 24px;color:#6d504c;font-size:11px;font-weight:600;letter-spacing:.1em;line-height:1.35;text-transform:uppercase}.hero-credential::before{content:"";width:20px;height:1px;background:var(--gold);flex:none}@media (max-width:800px){.hero-credential{margin:-7px 0 22px;font-size:10px;letter-spacing:.085em}.hero-credential::before{width:16px}}
 
+/* Regra de composição: toda grade de duas colunas compartilha a mesma linha de início. */
+.intro-grid,.approach,.garden,.about,.about-body,.first-contact,.faq{align-items:start}
+.approach-copy{min-height:400px}
+.garden-copy{min-height:430px}
+@media (max-width:800px){.approach-copy,.garden-copy{min-height:0}}
+
 /* Revelação única e discreta: guia a leitura sem criar movimento contínuo. */
 @media (prefers-reduced-motion:no-preference){
   .js-motion .section-pad:not(.hero){opacity:0;transform:translateY(16px);transition:opacity .65s cubic-bezier(.16,1,.3,1),transform .65s cubic-bezier(.16,1,.3,1)}
