@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://marcelo-pituba-site.vercel.app/sitemap.xml
