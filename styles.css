@@ -975,16 +975,16 @@ details p {
         margin-top:2px;
       }
       .hero-cutout {
-        display:block;
-        position:absolute;
-        left:56vw;
-        top:50%;
-        transform:translateY(-50%);
-        height:min(70vh,560px);
-        width:auto;
-        pointer-events:none;
-        z-index:1;
-      }
+              display:block;
+              position:absolute;
+              left:56vw;
+              top:50%;
+              transform:translateY(-50%);
+              height:min(62vh,500px);
+              width:auto;
+              pointer-events:none;
+              z-index:1;
+            }
   .hero-whatsapp span {
     font-size:14px;
     letter-spacing:.15em;
