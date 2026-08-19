@@ -176,7 +176,7 @@ h1 em {
 .intro-grid {
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:13vw;
+  gap:12vw;
   align-items:start;
 }
 .intro h2,.moments h2,.approach h2,.garden h2,.about h2,.contact-panel h2,.faq h2,.final-cta h2,.sport h2 {
@@ -243,7 +243,7 @@ h1 em {
 }
 .approach {
   display:grid;
-  grid-template-columns:.9fr 1.1fr;
+  grid-template-columns:1fr 1fr;
   gap:12vw;
   align-items:center;
   background:var(--blue);
