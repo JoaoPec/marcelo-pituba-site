@@ -481,6 +481,18 @@ h1 em {
   color:#685655;
   font-size:17px;
 }
+.faq-cta {
+  margin-top:44px;
+  padding-top:30px;
+  border-top:1px solid var(--line);
+}
+.faq-cta p {
+  color:#685655;
+  font-size:15px;
+  line-height:1.6;
+  margin:0 0 18px;
+  max-width:280px;
+}
 .faq-list details {
   border-top:1px solid var(--line);
   padding:18px 0;
