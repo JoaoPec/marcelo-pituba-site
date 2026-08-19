@@ -466,13 +466,15 @@ h1 em {
   max-width:400px;
 }
 .faq {
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:12vw;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
   background:#ede3da;
 }
 .faq-heading {
-  max-width:340px;
+  text-align:center;
+  max-width:650px;
+  margin-bottom:52px;
 }
 .faq-heading h2 {
   margin-bottom:20px;
@@ -481,17 +483,9 @@ h1 em {
   color:#685655;
   font-size:17px;
 }
-.faq-cta {
-  margin-top:44px;
-  padding-top:30px;
-  border-top:1px solid var(--line);
-}
-.faq-cta p {
-  color:#685655;
-  font-size:15px;
-  line-height:1.6;
-  margin:0 0 18px;
-  max-width:280px;
+.faq-list {
+  width:100%;
+  max-width:760px;
 }
 .faq-list details {
   border-top:1px solid var(--line);
@@ -682,10 +676,10 @@ details p {
   .section-pad {
     padding:75px 7vw;
   }
-  .hero,.intro-grid,.approach,.garden,.about,.first-contact-grid,.faq {
-      grid-template-columns:1fr;
-      gap:48px;
-    }
+  .hero,.intro-grid,.approach,.garden,.about,.first-contact-grid {
+        grid-template-columns:1fr;
+        gap:48px;
+      }
   .hero {
     padding-top:55px;
   }
@@ -744,9 +738,9 @@ details p {
     border-top:1px solid rgba(245,223,180,.35);
     padding:36px 0 0;
   }
-  .faq {
-    gap:36px;
-  }
+  .faq-heading {
+      margin-bottom:40px;
+    }
   .site-footer {
     grid-template-columns:1fr;
     padding:48px 7vw 28px;
@@ -1090,7 +1084,7 @@ section[id] {
   }
 }
 /* Regra de composição: toda grade de duas colunas compartilha a mesma linha de início. */
-.intro-grid,.approach,.garden,.about,.about-body,.first-contact,.faq {
+.intro-grid,.approach,.garden,.about,.about-body,.first-contact {
   align-items:start;
 }
 .approach {
