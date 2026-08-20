@@ -575,7 +575,8 @@ details p {
 }
 .emergency {
   grid-column:1/-1;
-  font-size:12px;
+  font-size:14px;
+  font-weight:700;
   color:#765f5a;
   max-width:700px;
   margin:20px 0 0;
