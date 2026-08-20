@@ -1005,7 +1005,24 @@ details p {
       height:28px;
     }
   }
-  /* Escala de exibição alta (150%+): compacta o hero em viewports baixos. */
+  /* Escala de exibição alta (150%): compacta o header em larguras intermediárias. */
+@media (min-width:1101px) and (max-width:1450px) {
+  .site-header {
+    padding-inline:4vw;
+  }
+  .brand small {
+    font-size:8px;
+    letter-spacing:.06em;
+  }
+  .desktop-nav {
+    gap:16px;
+  }
+  .desktop-nav a {
+    font-size:10px;
+    letter-spacing:.06em;
+  }
+}
+/* Escala de exibição alta (150%+): compacta o hero em viewports baixos. */
   @media (min-width:1101px) and (max-height:780px) {
     .hero {
       padding-top:26px;
