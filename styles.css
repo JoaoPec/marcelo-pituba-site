@@ -1052,6 +1052,58 @@ details p {
     margin-top:4px;
   }
 }
+/* Escala de exibição alta (150%+): compacta o layout inteiro em viewports baixos. */
+@media (min-width:801px) and (max-height:820px) {
+  .section-pad {
+    padding:70px 10vw;
+  }
+  .intro h2,.moments h2,.approach h2,.garden h2,.about h2,.contact-panel h2,.faq h2,.final-cta h2,.sport h2 {
+    font-size:clamp(26px,3.4vw,44px);
+  }
+  .moments-heading {
+    margin-bottom:40px;
+  }
+  .moment-list article {
+    padding:22px 26px 12px 0;
+  }
+  .approach-portrait {
+    height:330px;
+  }
+  .garden-art {
+    height:350px;
+  }
+  .about-portrait img {
+    max-height:520px;
+    width:auto;
+  }
+  .body-copy {
+    font-size:16px;
+  }
+  .faq-list details {
+    padding:14px 0;
+  }
+  .contact-notes>div {
+    padding:0 0 18px;
+    margin:0 0 18px;
+  }
+}
+@media (min-width:801px) and (max-height:680px) {
+  .section-pad {
+    padding:48px 10vw;
+  }
+  .moments-heading {
+    margin-bottom:28px;
+  }
+  .approach-portrait {
+    height:270px;
+  }
+  .garden-art {
+    height:290px;
+  }
+  .moment-list article {
+    padding:16px 20px 10px 0;
+  }
+}
 /* Cabeçalho persistente: mantém a mesma posição visual inicial e protege âncoras. */
 body {
   padding-top:76px;
