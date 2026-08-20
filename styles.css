@@ -69,11 +69,12 @@ body {
   letter-spacing:.02em;
 }
 .brand small {
-  font-size:10px;
-  letter-spacing:.14em;
+  font-size:9px;
+  letter-spacing:.1em;
   text-transform:uppercase;
   color:#765c58;
   margin-top:5px;
+  white-space:nowrap;
 }
 .desktop-nav {
   display:flex;
@@ -198,13 +199,15 @@ h1 em {
 }
 .moments-heading {
   max-width:650px;
-  margin-bottom:65px;
+  margin:0 auto 65px;
+  text-align:center;
 }
 .moments-heading h2 {
   margin-bottom:20px;
 }
 .moments-heading>p:last-child {
   max-width:520px;
+  margin:0 auto;
   color:#685655;
   font-size:17px;
 }
@@ -369,6 +372,13 @@ h1 em {
   font:400 66px/.82 var(--serif);
   color:var(--wine);
   margin:8px 12px 0 0;
+}
+.hero-services {
+  font-size:16px;
+  font-weight:600;
+  letter-spacing:.03em;
+  color:var(--wine-dark);
+  margin:0 0 10px;
 }
 .hero-note {
   max-width:520px;
@@ -1096,18 +1106,18 @@ section[id] {
   }
   .hero-credential::before {
     width:16px;
-  }
-}
-/* Regra de composição: toda grade de duas colunas compartilha a mesma linha de início. */
-.intro-grid,.approach,.garden,.about,.about-body,.first-contact {
-  align-items:start;
-}
-.approach {
-  align-items:stretch;
-}
-.approach-copy {
-  min-height:400px;
-}
+      }
+    }
+    /* Regra de composição: toda grade de duas colunas compartilha a mesma linha de início. */
+    .intro-grid,.approach,.garden,.about,.about-body,.first-contact {
+      align-items:start;
+    }
+    .approach {
+      align-items:stretch;
+    }
+    .approach-copy {
+      min-height:400px;
+    }
 .garden-copy {
   min-height:430px;
 }
