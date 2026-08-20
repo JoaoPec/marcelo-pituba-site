@@ -557,7 +557,7 @@ details p {
   max-width:540px;
   color:#685655;
   margin:25px 0 30px;
-  font-size:19px;
+  font-size:17px;
 }
 .site-footer {
   background:#e5d8cf;
@@ -575,7 +575,7 @@ details p {
 }
 .emergency {
   grid-column:1/-1;
-  font-size:14px;
+  font-size:15px;
   font-weight:700;
   color:#765f5a;
   max-width:700px;
