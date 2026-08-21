@@ -394,22 +394,24 @@ h1 em {
   font-family:var(--serif);
 }
 .formation {
-  border-top:1px solid var(--line);
-  margin-top:42px;
-  padding-top:28px;
+  border-top:0;
+  margin-top:44px;
+  padding-top:0;
+  text-align:center;
 }
 .formation h3 {
-  font:400 22px var(--serif);
-  color:var(--wine-dark);
-  margin:0 0 16px;
+  font:600 13px var(--sans);
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--wine);
+  margin:0 0 24px;
 }
 .formation ul {
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:0 36px;
-  padding:0;
-  margin:0;
   list-style:none;
+  padding:0;
+  margin:0 auto;
+  max-width:480px;
+  text-align:left;
 }
 .formation li {
   font-size:15px;
@@ -741,11 +743,8 @@ details p {
   }
   .about-portrait figcaption {
     font-size:8px;
-  }
-  .formation ul {
-    grid-template-columns:1fr;
-  }
-  .first-contact-grid {
+      }
+      .first-contact-grid {
       gap:40px;
     }
   .contact-notes {
