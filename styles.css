@@ -395,37 +395,45 @@ h1 em {
 }
 .formation {
   border-top:0;
-  margin-top:44px;
+  margin:76px auto 0;
   padding-top:0;
+  max-width:920px;
   text-align:center;
 }
 .formation h3 {
-  font:600 13px var(--sans);
-  letter-spacing:.12em;
-  text-transform:uppercase;
-  color:var(--wine);
-  margin:0 0 24px;
+  font:400 clamp(30px,3.2vw,42px)/1.18 var(--serif);
+  letter-spacing:-.035em;
+  color:var(--wine-dark);
+  margin:0 0 34px;
 }
 .formation ul {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:16px 22px;
   list-style:none;
   padding:0;
   margin:0 auto;
-  max-width:480px;
   text-align:left;
 }
 .formation li {
-  font-size:15px;
+  min-height:92px;
+  display:flex;
+  align-items:flex-start;
+  font-size:16px;
+  line-height:1.5;
   color:#5f4d4b;
-  padding:8px 0 8px 17px;
+  padding:22px 24px 22px 42px;
   position:relative;
+  border:1px solid rgba(109,80,76,.16);
+  background:rgba(255,252,247,.42);
 }
 .formation li::before {
   content:"";
   position:absolute;
-  left:0;
-  top:16px;
-  width:6px;
-  height:6px;
+  left:22px;
+  top:30px;
+  width:7px;
+  height:7px;
   border-radius:50%;
   background:var(--gold);
 }
@@ -743,8 +751,17 @@ details p {
   }
   .about-portrait figcaption {
     font-size:8px;
-      }
-      .first-contact-grid {
+  }
+  .formation {
+    margin-top:56px;
+  }
+  .formation ul {
+    grid-template-columns:1fr;
+  }
+  .formation li {
+    min-height:0;
+  }
+  .first-contact-grid {
       gap:40px;
     }
   .contact-notes {
