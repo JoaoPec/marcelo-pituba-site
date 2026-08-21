@@ -269,8 +269,8 @@ h1 em {
   font-size:17px;
 }
 .approach-portrait {
-  height:calc(100% - 64px);
-  min-height:400px;
+  height:calc(100% - 170px);
+  min-height:520px;
   align-self:start;
   margin:0;
   overflow:hidden;
@@ -334,30 +334,18 @@ h1 em {
 .about-portrait {
   margin:0;
   position:relative;
-}
-.about-portrait:before {
-  content:"";
-  position:absolute;
-  inset:-12px 12px 12px -12px;
-  border:1px solid rgba(200,161,69,.55);
-  pointer-events:none;
+  align-self:start;
+  height:calc(100% - 64px);
+  min-height:560px;
+  overflow:hidden;
 }
 .about-portrait img {
   display:block;
   width:100%;
-  height:auto;
-  aspect-ratio:2/3;
+  height:100%;
   object-fit:cover;
   object-position:center top;
-  filter:saturate(.88) contrast(1.02);
-}
-.about-portrait figcaption {
-  margin-top:14px;
-  color:var(--wine);
-  font-size:9px;
-  letter-spacing:.14em;
-  text-transform:uppercase;
-  line-height:1.5;
+  filter:saturate(.9) contrast(1.02);
 }
 .about-content {
   max-width:640px;
@@ -747,10 +735,13 @@ details p {
     gap:35px;
   }
   .about-portrait {
-    max-width:340px;
+    max-width:380px;
+    min-height:480px;
+    height:auto;
   }
-  .about-portrait figcaption {
-    font-size:8px;
+  .about-portrait img {
+    height:auto;
+    aspect-ratio:2/3;
   }
   .formation {
     margin-top:56px;
@@ -1042,7 +1033,7 @@ details p {
                           left:56vw;
                           top:50%;
                           transform:translateY(-50%);
-                          height:min(76vh,610px);
+                          height:min(80vh,640px);
                           width:auto;
                           pointer-events:none;
                           z-index:1;
@@ -1098,7 +1089,7 @@ details p {
       margin-bottom:6px;
     }
     .hero-cutout {
-      height:min(70vh,470px);
+      height:min(74vh,500px);
     }
   }
   @media (max-width:1100px) and (min-width:801px) {
@@ -1135,8 +1126,8 @@ details p {
     padding:22px 26px 12px 0;
   }
   .approach-portrait {
-    height:calc(100% - 56px);
-    min-height:520px;
+    height:calc(100% - 170px);
+    min-height:620px;
   }
   .garden-art {
     height:350px;
@@ -1164,8 +1155,8 @@ details p {
     margin-bottom:28px;
   }
   .approach-portrait {
-    height:calc(100% - 48px);
-    min-height:460px;
+    height:calc(100% - 150px);
+    min-height:520px;
   }
   .garden-art {
     height:290px;
