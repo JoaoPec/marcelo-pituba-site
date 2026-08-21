@@ -1125,9 +1125,17 @@ details p {
   .moment-list article {
     padding:22px 26px 12px 0;
   }
+  .approach h2 {
+    font-size:clamp(24px,3vw,38px);
+  }
+  .approach-copy p:not(.eyebrow) {
+    font-size:15px;
+    line-height:1.58;
+    margin-bottom:16px;
+  }
   .approach-portrait {
     height:calc(100% - 170px);
-    min-height:620px;
+    min-height:540px;
   }
   .garden-art {
     height:350px;
@@ -1154,7 +1162,11 @@ details p {
   .moments-heading {
     margin-bottom:28px;
   }
-  .approach-portrait,.about-portrait {
+  .approach-portrait {
+    height:calc(100% - 150px);
+    min-height:480px;
+  }
+  .about-portrait {
     height:calc(100% - 150px);
     min-height:520px;
   }
