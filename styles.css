@@ -534,6 +534,68 @@ details p {
   font-size:15px;
   margin:13px 35px 2px 0;
 }
+.publications-hero {
+  min-height:420px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  background:var(--paper-deep);
+}
+.publications-hero h1 {
+  max-width:820px;
+  margin:0;
+  font:400 clamp(38px,5vw,68px)/1.12 var(--serif);
+  letter-spacing:-.055em;
+  color:var(--wine-dark);
+}
+.publications-hero>p:not(.eyebrow) {
+  max-width:680px;
+  margin:28px auto 0;
+  color:#685655;
+  font-size:18px;
+}
+.publications-list {
+  background:var(--paper);
+  display:flex;
+  justify-content:center;
+}
+.publication-card {
+  width:100%;
+  max-width:880px;
+  padding:48px 52px;
+  border:1px solid rgba(109,80,76,.16);
+  background:rgba(255,252,247,.46);
+}
+.publication-meta {
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin:0 0 20px;
+  color:var(--wine);
+  font-size:12px;
+  font-weight:600;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+.publication-meta span {
+  padding:6px 10px;
+  border:1px solid rgba(123,30,45,.16);
+}
+.publication-card h2 {
+  max-width:720px;
+  margin:0 0 20px;
+  font:400 clamp(28px,3.4vw,44px)/1.18 var(--serif);
+  letter-spacing:-.04em;
+  color:var(--wine-dark);
+}
+.publication-card>p:not(.publication-meta) {
+  max-width:720px;
+  margin:0 0 30px;
+  color:#685655;
+  font-size:17px;
+}
 .final-cta {
   text-align:center;
   display:flex;
@@ -1057,11 +1119,11 @@ details p {
     letter-spacing:.06em;
   }
   .desktop-nav {
-    gap:16px;
+    gap:12px;
   }
   .desktop-nav a {
-    font-size:10px;
-    letter-spacing:.06em;
+    font-size:9.5px;
+    letter-spacing:.045em;
   }
 }
 /* Escala de exibição alta (150%+): compacta o hero em viewports baixos. */
@@ -1109,6 +1171,17 @@ details p {
   .hero-whatsapp {
     min-height:56px;
     margin-top:4px;
+  }
+  .publications-hero {
+    min-height:auto;
+    align-items:flex-start;
+    text-align:left;
+  }
+  .publications-hero h1 {
+    font-size:clamp(34px,10vw,52px);
+  }
+  .publication-card {
+    padding:32px 24px;
   }
 }
 /* Escala de exibição alta (150%+): compacta o layout inteiro em viewports baixos. */
