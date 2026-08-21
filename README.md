@@ -12,6 +12,6 @@ Ou qualquer servidor HTTP estático. O site não depende de build ou backend.
 
 ## Ajustes antes da publicação
 
-- Substituir `CRP 03/XXXXX` pelo registro profissional real.
+- Substituir `CRP 03/36.742` — confirmado pelo registro profissional real.
 - Confirmar número, e-mail e links sociais.
 - Trocar o link do WhatsApp se necessário.
