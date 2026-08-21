@@ -89,6 +89,9 @@ body {
   color:var(--ink);
   text-decoration:none;
 }
+.desktop-nav a {
+  white-space:nowrap;
+}
 .desktop-nav a:hover,.footer-links a:hover {
   color:var(--wine);
 }
@@ -180,7 +183,7 @@ h1 em {
   gap:12vw;
   align-items:start;
 }
-.intro h2,.moments h2,.approach h2,.garden h2,.about h2,.contact-panel h2,.faq h2,.final-cta h2,.sport h2 {
+.intro h2,.moments h2,.couples h2,.approach h2,.garden h2,.about h2,.contact-panel h2,.faq h2,.final-cta h2,.sport h2 {
   font:400 clamp(30px,4vw,55px)/1.18 var(--serif);
   letter-spacing:-.04em;
   color:var(--wine-dark);
@@ -266,9 +269,8 @@ h1 em {
   font-size:17px;
 }
 .approach-portrait {
-  height:100%;
+  height:calc(100% - 64px);
   min-height:400px;
-  max-height:520px;
   align-self:start;
   margin:0;
   overflow:hidden;
@@ -777,12 +779,43 @@ details p {
   }
 }
 @media (max-width:1100px) and (min-width:801px) {
-  .desktop-nav {
-    gap:15px;
+  .site-header {
+    height:76px;
+    padding:0 5vw;
   }
-  .desktop-nav a {
-    font-size:10px;
-    letter-spacing:.055em;
+  .desktop-nav,.header-contact {
+    display:none;
+  }
+  .menu-toggle {
+    display:block;
+    background:none;
+    border:0;
+    color:var(--wine);
+    font-size:22px;
+    cursor:pointer;
+  }
+  .mobile-nav {
+    display:flex;
+    position:fixed;
+    top:76px;
+    left:0;
+    right:0;
+    z-index:19;
+    background:var(--paper);
+    padding:18px 7vw;
+    flex-direction:column;
+    gap:13px;
+    transform:translateY(-150%);
+    transition:transform .3s ease;
+    border-bottom:1px solid var(--line);
+  }
+  .mobile-nav.open {
+    transform:none;
+  }
+  .mobile-nav a {
+    color:var(--wine-dark);
+    text-decoration:none;
+    font:16px var(--serif);
   }
 }
 .brand-mark {
@@ -1076,7 +1109,7 @@ details p {
   .section-pad {
     padding:70px 10vw;
   }
-  .intro h2,.moments h2,.approach h2,.garden h2,.about h2,.contact-panel h2,.faq h2,.final-cta h2,.sport h2 {
+  .intro h2,.moments h2,.couples h2,.approach h2,.garden h2,.about h2,.contact-panel h2,.faq h2,.final-cta h2,.sport h2 {
     font-size:clamp(26px,3.4vw,44px);
   }
   .moments-heading {
@@ -1086,7 +1119,8 @@ details p {
     padding:22px 26px 12px 0;
   }
   .approach-portrait {
-    height:330px;
+    height:calc(100% - 56px);
+    min-height:520px;
   }
   .garden-art {
     height:350px;
@@ -1114,7 +1148,8 @@ details p {
     margin-bottom:28px;
   }
   .approach-portrait {
-    height:270px;
+    height:calc(100% - 48px);
+    min-height:460px;
   }
   .garden-art {
     height:290px;
@@ -1174,8 +1209,6 @@ section[id] {
   background:#e9ddd3;
 }
 .couples h2 {
-  font:400 clamp(30px,4vw,55px)/1.18 var(--serif);
-  letter-spacing:-.04em;
   color:var(--wine-dark);
   margin:0;
 }
